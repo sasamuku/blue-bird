@@ -22,8 +22,8 @@ export default function AuthButtonClient<Database>({ session }: { session: Sessi
   };
 
   return session ? (
-    <button onClick={handleSignOut}>Logout</button>
+    <button className="text-xm text-gray-400" onClick={handleSignOut}>Logout</button>
   ) : (
-    <button onClick={handleSignIn}>Login</button>
+    <button className="text-xm text-gray-400" onClick={handleSignIn}>Login</button>
   )
 }
